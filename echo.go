@@ -32,7 +32,7 @@ func main() {
 	// 使用了strings.Join的版本
 	startTime = time.Now()
 	for i := 0; i < 100000; i++ {
-		fmt.Println(strings.Join(os.Args[1:], " "))
+		strings.Join(os.Args[1:], " ")
 	}
 	fmt.Println("使用strings.Join版本运行时间:", time.Since(startTime))
 }
