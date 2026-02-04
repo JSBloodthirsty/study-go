@@ -3,12 +3,14 @@ package main
 import (
 	"fmt"
 	"os"
-	"path"
 	"strings"
 	"time"
 )
 
 func main() {
+	var path string
+	path = "asdsad"
+	fmt.Println(path)
 	// 获取命令名（去掉路径）
 	cmdName := path.Base(os.Args[0])
 	fmt.Println("命令名:", cmdName)
